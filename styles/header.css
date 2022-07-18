@@ -1,16 +1,20 @@
-/* HEADER ####################################### */
+/* HEADER / FORME et ANIMATIONS ######################################################################################################## */
+
 header{
+    justify-content: space-between;
+
     margin: 100px 0px 0px 0px;
     position: relative;
-    max-width: 1280px;
-    width: 100%;
-    height: 300px;
-    display: flex;
+
+    min-height: 300px;
+
     overflow: hidden;
     
-    border-radius: 10px 10px 0px 0px;
     border: 2px  rgb(100, 100, 100);
 }
+
+
+/* HEADER'S SIMPLE GRADIENT: Bleu-rien-ReBleu derrière. ============= */
 
 /* Gradient coloré */
 header::before{
@@ -21,7 +25,19 @@ header::before{
     top: 0%;
     right: 0%;
     z-index: -2;
-    background: linear-gradient(90deg, #ffffff 0%, #002fff 5%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 33%, #0022fe 40%, #a7ffd4 100%);
+
+    background: linear-gradient(90deg, #002fff 0%, #002fff 5%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, #0022fe 40%, #002fff 100%);
+}
+
+
+
+
+/* HEADER'S PATTERN (flatdesign) & SELF ANIMATION =============================================== */
+
+/* simpmle animation du pattern au dessus du gradient. */
+@keyframes slideUp {
+    0%{background: url(../assets/patternDevSmol.png) 0px 0px }
+    100%{background: url(../assets/patternDevSmol.png) 0px -171px}
 }
 
 /* Pattern avec masque d'image */
@@ -33,17 +49,101 @@ header::after{
     top: 0%;
     right: 0%;
     z-index: -1;
+    filter: invert(90%);
+
+    animation:15s running infinite slideUp linear;
+
+
     background: url(../assets/patternDevSmol.png) 50% 50%/10%;
     /* Appelez le président ! On peut faire des masques alpha sur des elements. */
     -webkit-mask-image: linear-gradient(90deg, #0341B2 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, #0341B2 100%);
     mask-image: linear-gradient(90deg, #0341B2 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, #0341B2 100%);
-
 }
 
-/* Video en dessous de mon header, en absolute. */
+
+
+
+
+
+/* HEADER : CONTENU ######################################################################################################## */
+
+
+
+/* Section portrait, gauche header, au dessus de ma tête ====================================*/
+#portrait{
+    position: relative;
+    justify-content: flex-end;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+/* Video ABSOLUTE dans ma section portrait . Z-index negatif */
 header video{
     position: absolute;
-    transform: translate(-28%, -30%) scale(49%);
+    transform: translate(2%, 26%) scale(49%);
     z-index: -3;
     
+}
+
+#portrait h1{
+    margin: 0px 20px 0px 0px;
+}
+#portrait h1 span{
+    opacity: 80%;
+}
+#portrait :is(.row, a){
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+#portrait .row{
+    width: fit-content;
+    backdrop-filter: blur(4px);
+}
+#portrait img{
+    margin: 10px;
+    height: 30px;
+    transform: translate(0px, 2px);
+}
+
+
+
+
+/* section infos, droite header, au dessus du pattern qui défile =========================== */
+#informations{
+    padding: 10px;
+    width: 60%;
+}
+
+#informations div.column{
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    /* CI-DESSOUS: Bordure officielle des trucs quasi-invisibles. */
+    border: solid rgba(255, 255, 255, 0.05) 1px;
+    /* CI-DESSUS : Bordure officielle des trucs quasi-invisibles. */
+
+    border-radius: 5px;
+}
+
+#punchline{
+    color: rgb(255, 211, 66);
+    font-weight: 400;
+}
+
+
+
+
+/* HOLDER des badges de dév web (comme les scouts) -------------------------------- */
+#badgeHolder{
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+#badgeHolder img{
+    height: 55px;
+    margin: 5px;
 }

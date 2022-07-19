@@ -1,0 +1,47 @@
+/* Format de la section interlude. Navbar glorifiée ou espace pub. */
+
+/* Main Container */
+#interlude{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap ;
+    margin: 50px 0px 0px 0px;
+
+    width: 100%;
+
+    min-height: 200px;
+
+    background-color: #212122;
+}
+
+.top{
+    display: flex;
+    width: fit-content;
+}
+
+.bottom{
+    display:flex;
+    width: fit-content;
+}
+
+/* Style spécial par contenu d'info */
+#info1{
+    max-width: 612px;
+    background: url(../assets/placeholder.jpg) 50% 50% no-repeat;
+    background-size: cover;
+
+}
+#info2{
+    max-width: 300px;
+    background: url(../assets/placeholder.jpg) 50% 50% no-repeat;
+    background-size: cover;
+
+
+}
+#info3{
+    max-width: 300px;    
+    background: url(../assets/placeholder.jpg) 50% 50% no-repeat;
+    background-size: cover;
+
+
+}

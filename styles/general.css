@@ -43,7 +43,8 @@ h2{
 }
 h3{
     font-family: 'Barlow', sans-serif;
-    font-size: 20px;
+    font-weight: 100;
+    font-size: 25px;
     margin-bottom: 10px;
 }
 
@@ -59,17 +60,20 @@ hr{
 }
 
 
+
+
 /* Gestions de containers generaux  ##################################################################################### */
 
 /* Le top container */
 .mainContainer{
     max-width: 1280px;
     width: 100%;
+
     display: flex;
 }
+
 /* quick column/row flex-system */
 /* Gain de temps quand je m'en souviens. */
-
 .column{
     display: flex;
     flex-direction: column;
@@ -79,3 +83,110 @@ hr{
     display: flex;
     justify-content: center;
 }
+
+
+
+
+/* Gestions de formats CARDS, si vous chezchez le bonheur, c'est là qu'il est venu mourir. ######################################## */
+.mainCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+
+    border-radius: 0px 3px 3px 0px;
+    overflow: hidden ;
+}
+
+
+/* Layer semi-blurry masqué par un pattern au gradient-intégré sur son plateau "CARD" */
+.mainCard::after{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient(180deg, rgba(0,0,0,0.7259278711484594) 0%, rgba(2,21,255,0) 39%, rgba(2,23,255,0) 52%, #002fff 74%, #00177d 100%);
+
+    /* Appelez le président ! On peut faire des masques alpha sur des elements. */
+    /* j'ai du concevoir un pattern avec gradient intégré, le cumul d'un masque  gradient procédural avec un masque-IMAGE ne réagit pas comme je le pensais, les Masques sont additifs. */
+    /* Le mask-image n'affecte pas la propriété BLUR. abort. */
+
+    -webkit-mask-image: url(../assets/GpasSoft.png);
+    mask-image: url(../assets/GpasSoft.png);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    
+    
+}
+
+
+
+/* TITRE de la card */
+.mainCard h3{
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 4;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    
+    margin-bottom: 0;
+
+    /* Variarion de la couleur des titres cards. */
+    animation: 20s running infinite chooseColor linear;
+    color: rgb(255, 255, 255);
+    background-color:#444f764f;
+
+    font-weight: 700;
+
+    text-shadow: 1px 1px 3px black;
+
+    backdrop-filter: blur(10px) brightness(50%) contrast(90%);
+}
+/* Description de la card */
+.mainCard p{
+    z-index: 2 ;
+    padding: 20px;
+    height: 100%;
+
+    text-shadow: 1px 1px 3px black;
+
+    margin-bottom: 0;
+    backdrop-filter: blur(2px) brightness(50%) contrast(90%);
+
+}
+
+/* Un liserai coloré animé en même temps que le header. */
+.mainCard h3::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 10px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    
+    animation: 20s running infinite chooseColor linear;
+    background-color: #002fff;
+    transition: 0.2s;
+}
+/* Le liserai s'étend au hover */
+.mainCard:hover h3::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    animation: 20s running infinite chooseColor linear;
+    background-color: 002fff;
+}
+
+/* FIN DES CARTES !!!!! ######################################## */

@@ -16,6 +16,16 @@ header{
 
 /* HEADER'S SIMPLE GRADIENT: Bleu-rien-ReBleu derrière. ============= */
 
+
+/* Variation du hue sur un cycle de 20 seconde : Bleu-violet. */
+@keyframes chooseColor {
+    0%{filter: hue-rotate(0%);}
+    25%{filter: hue-rotate(-20deg);}
+    50%{filter: hue-rotate(0deg);}
+    75%{filter: hue-rotate(20deg);}
+    100%{filter: hue-rotate(0deg);}
+}
+
 /* Gradient coloré */
 header::before{
     content: "";
@@ -26,7 +36,9 @@ header::before{
     right: 0%;
     z-index: -2;
 
-    background: linear-gradient(90deg, #002fff 0%, #002fff 5%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, #0022fe 40%, #002fff 100%);
+    animation: 20s running infinite chooseColor linear;
+
+    background: linear-gradient(90deg, #002fff 0%, #002fff 5%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, #002fff 40%, #002fff 100%);
 }
 
 
@@ -121,7 +133,7 @@ header video{
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
     /* CI-DESSOUS: Bordure officielle des trucs quasi-invisibles. */
     border: solid rgba(255, 255, 255, 0.05) 1px;
     /* CI-DESSUS : Bordure officielle des trucs quasi-invisibles. */
@@ -130,7 +142,7 @@ header video{
 }
 
 #punchline{
-    color: rgb(255, 211, 66);
+    /* color: rgb(255, 211, 66); */
     font-weight: 400;
 }
 

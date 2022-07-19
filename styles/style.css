@@ -1,4 +1,3 @@
-
 /* Styles généraux */
 @import url(general.css);
 
@@ -7,3 +6,12 @@
 
 /* Style Navbar */
 @import url(navbar.css);
+
+/* Style de l'interlude après la navbar */
+@import url(interlude.css);
+
+/* style de la section experience */
+@import url(skillsExperience.css);
+
+/* Responsive, importé en dernier, priorité élevée.*/
+@import url(responsive.css);

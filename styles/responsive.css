@@ -1,0 +1,60 @@
+@media screen and (max-width: 900px) {
+    header{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    header video{
+        display: none;
+    }
+
+    header::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        right: 0%;
+        z-index: -2;
+    
+        animation: 20s running infinite chooseColor linear;
+    
+    background-color: #002fff;
+    }
+
+    header::after{
+    
+        background: url(../assets/patternDevSmol.png) 50% 50%/10%;
+        -webkit-mask-image: linear-gradient(#002fff, #002fff);
+        mask-image: linear-gradient(90deg, #0341B2 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, #0341B2 100%);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #portrait{
+        margin-right: 50px;
+    }
+
+    #portrait img{
+        height: 50px;
+    }
+
+    #informations{
+        width: 100%;
+    }
+
+
+}

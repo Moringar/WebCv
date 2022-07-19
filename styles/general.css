@@ -9,6 +9,10 @@
 }
 /* FIN. */
 
+/* Pour que la navigation entre ancres soit smooth. */
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -19,7 +23,7 @@ body{
     background-color: rgb(28, 28, 28);
 }
 
-/* Fonts Générales */
+/* Fonts Générales ===================================================================*/
 h1, h2, h3, h4, p, ul, li, a{
     padding: 0;
     margin: 0;
@@ -87,7 +91,7 @@ hr{
 
 
 
-/* Gestions de formats CARDS, si vous chezchez le bonheur, c'est là qu'il est venu mourir. ######################################## */
+/* Gestions de formats CARDS, si vous chezchez le bonheur, c'est là qu'il est venu mourir. ###################################################################### */
 .mainCard{
     position: relative;
     display: flex;
@@ -96,13 +100,19 @@ hr{
     justify-content: space-between;
     width: 100%;
     margin: 10px;
-
+    top: 0px;
     border-radius: 0px 3px 3px 0px;
     overflow: hidden ;
+    transition: 0.5s;
 }
 
+.mainCard:hover{
+    
+    top: -10px;
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.222));
+}
 
-/* Layer semi-blurry masqué par un pattern au gradient-intégré sur son plateau "CARD" */
+/* Layer semi-blurry masqué par un pattern gradient-intégré sur "CARD" */
 .mainCard::after{
     content: "";
     z-index: 1;
@@ -190,3 +200,6 @@ hr{
 }
 
 /* FIN DES CARTES !!!!! ######################################## */
+
+
+

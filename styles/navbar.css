@@ -8,7 +8,7 @@ nav{
 
 }
 #navbar{
-    background-color: #2121228e;
+    background-color: #212122b7;
     backdrop-filter: blur(10px);
     height: 50px;
 
@@ -18,10 +18,51 @@ nav{
 }
 
 #navbar a{
+    display: inline-block;
+    position: relative;
+    
+    padding: 0px 10px 0px 10px;
     margin: 0px 10px 0px 10px;
+
     text-transform: uppercase;
     font-family: Barlow;
     font-size: 25px;
     font-weight: 300;
+
+    transition: 0.2s;
+
+    
+    animation: 20s running infinite chooseColor linear;
+    color: #002fff;
+}
+#navbar a:hover {
+    color: #ffffff;
+}
+
+/* liserai de la navbar */
+#navbar a::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 0px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    
+    animation: 20s running infinite chooseColor linear;
+    background-color: #002fff;
+    transition: 0.2s;
+}
+/* Le liserai s'étend au hover */
+#navbar a:hover:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    animation: 20s running infinite chooseColor linear;
+    background-color: 002fff;
 }
 

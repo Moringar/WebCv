@@ -38,6 +38,7 @@
     width:  300px;
     height: 180px;
     transition: 0.5s;
+
     background: linear-gradient(#002fffdb, #002fffdb), url(../assets/GpasSoft.png) 50% 50%/100%, #002fff;
     filter: saturate(50%);
 }
@@ -46,8 +47,8 @@
 .skillCard p{
     display: none;
     padding: 10px;
+    
     background: linear-gradient(#002fffdb, #001ea4db), url(../assets/GpasSoft.png) 50% 18%/100%, #002fff;
-    text-transform: uppercase;
     margin-top: 10px;
     border-radius: 0px 0px 3px 3px;
 }

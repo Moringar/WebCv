@@ -27,20 +27,20 @@
 /* Style spécial par contenu d'info */
 #info1{
     max-width: 612px;
-    background: url(../assets/onlineFormapro.png) 50% 50% no-repeat;
+    background: url(../assets/backgrounds/onlineFormapro.png) 50% 50% no-repeat;
     background-size: cover;
 
 }
 #info2{
     max-width: 300px;
-    background: url(../assets/yaCode.jpg) 50% 50% no-repeat;
+    background: url(../assets/backgrounds/yaCode.jpg) 50% 50% no-repeat;
     background-size: cover;
 
 
 }
 #info3{
     max-width: 300px;    
-    background: url(../assets/ukulélé.jpg) 50% 50% no-repeat;
+    background: url(../assets/backgrounds/ukulélé.jpg) 50% 50% no-repeat;
     background-size: cover;
 
 

@@ -36,7 +36,6 @@ nav{
     transition: 0.2s;
 
     
-    animation: 20s running infinite chooseColor linear;
     color: #232323;
 }
 #navbar a:hover {

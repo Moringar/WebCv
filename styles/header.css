@@ -48,8 +48,8 @@ header::before{
 
 /* simpmle animation du pattern au dessus du gradient. */
 @keyframes slideUp {
-    0%{background: url(../assets/patternDevSmol.png) 0px 0px }
-    100%{background: url(../assets/patternDevSmol.png) 0px -171px}
+    0%{background: url(../assets/pattern/patternDevSmol.png) 0px 0px }
+    100%{background: url(../assets/pattern/patternDevSmol.png) 0px -171px}
 }
 
 /* Pattern avec masque d'image */

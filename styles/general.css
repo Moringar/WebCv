@@ -141,8 +141,8 @@ h2.sectionTitle{
     /* j'ai du concevoir un pattern avec gradient intégré, le cumul d'un masque  gradient procédural avec un masque-IMAGE ne réagit pas comme je le pensais, les Masques sont additifs. */
     /* Le mask-image n'affecte pas la propriété BLUR. abort. */
 
-    -webkit-mask-image: url(../assets/GpasSoft.png);
-    mask-image: url(../assets/GpasSoft.png);
+    -webkit-mask-image: url(../assets/pattern/patternMicro.png);
+    mask-image: url(../assets/pattern/patternMicro.png);
     -webkit-mask-size: cover;
     mask-size: cover;
     -webkit-mask-repeat: no-repeat;

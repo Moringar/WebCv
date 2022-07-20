@@ -29,7 +29,7 @@
     position: relative;
     margin: 10px;
     padding-top: 20px;
-    background: linear-gradient(#002fffdb, #002fffdb), url(../assets/GpasSoft.png) 50% 50%/100%, #002fff;
+    background: linear-gradient(#002fffdb, #002fffdb), url(../assets/pattern/patternMicro.png) 50% 50%/100%, #002fff;
     
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
 
 /* Format du texte a dérouler. */
 .skillCard p{
-    background: linear-gradient(#002fffdb, #001ea4db), url(../assets/GpasSoft.png) 50% 18%/100%, #002fff;
+    background: linear-gradient(#002fffdb, #001ea4db), url(../assets/pattern/patternMicro.png) 50% 18%/100%, #002fff;
     display: none;
     padding: 10px;
     
@@ -62,7 +62,7 @@
 .skillCard span::before{
     content: "";
     z-index: 3;
-    background: url(../assets/pro.png) 50% 50%/100% no-repeat;
+    background: url(../assets/icons/pro.png) 50% 50%/100% no-repeat;
     position: absolute;
     filter: drop-shadow(0px 0px 3px black);
     transform: rotate(-12deg);

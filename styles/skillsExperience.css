@@ -29,7 +29,7 @@
     position: relative;
     margin: 10px;
     padding-top: 20px;
-
+    background: linear-gradient(#002fffdb, #002fffdb), url(../assets/GpasSoft.png) 50% 50%/100%, #002fff;
     
     display: flex;
     flex-direction: column;
@@ -39,16 +39,15 @@
     height: 180px;
     transition: 0.5s;
 
-    background: linear-gradient(#002fffdb, #002fffdb), url(../assets/GpasSoft.png) 50% 50%/100%, #002fff;
     filter: saturate(50%);
 }
 
 /* Format du texte a dérouler. */
 .skillCard p{
+    background: linear-gradient(#002fffdb, #001ea4db), url(../assets/GpasSoft.png) 50% 18%/100%, #002fff;
     display: none;
     padding: 10px;
     
-    background: linear-gradient(#002fffdb, #001ea4db), url(../assets/GpasSoft.png) 50% 18%/100%, #002fff;
     margin-top: 10px;
     border-radius: 0px 0px 3px 3px;
 }

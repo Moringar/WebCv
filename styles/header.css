@@ -140,22 +140,68 @@ header video{
 
     border-radius: 5px;
 }
-
 #punchline{
     /* color: rgb(255, 211, 66); */
-    font-weight: 400;
+    font-weight: 900;
 }
-
-
 
 
 /* HOLDER des badges de dév web (comme les scouts) -------------------------------- */
 #badgeHolder{
     flex-wrap: wrap;
-
     width: 100%;
 }
-#badgeHolder img{
-    height: 55px;
+div.badge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.badge img{
+    height: 65px;
     margin: 5px;
+    filter: saturate(50%) brightness(200%) drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.692));
+    transform: translateY(0px);
+    transition: 0.5s;
+}
+div.badge:hover img{
+    filter: saturate(100%);
+    transform: translateY(-10px);
+}
+
+/* Differents états de mes badges ========================== */
+
+/* OWNED, quand j'ai gagné mon badge. */
+div.owned:hover{
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.692));
+}
+
+/* Training, quand j'y travaille. */
+@keyframes blip {
+    0%{opacity: 75%;}
+    25%{opacity: 50%;}
+    75%{opacity: 50%;}
+    100%{opacity: 75%;}
+}
+div.training img{
+    animation: blip infinite linear 2s;
+    filter: saturate(40%);
+}
+
+/* soon, quand je constate que j'ai encore beaucoup d'espace a explorer */
+div.soon img{
+    filter: blur(2px);
+    opacity: 25%;
+}
+
+/*Gestion du label P à l'intérieur des .badges */
+div.badge p{
+    position: absolute;
+    display: none;
+    font-weight: 800;
+}
+div.badge:hover p{
+    display: block;
+    text-align: center;
+    opacity: 100%;
+    transform: translateY(63px);
 }

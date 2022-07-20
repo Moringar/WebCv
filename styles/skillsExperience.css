@@ -4,9 +4,8 @@
     flex-direction: column;
 
 
-    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.664) 2%, rgba(51, 51, 51, 0) 13%);
-    padding: 0px 0px 50px 0px;
-
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.664) 2%, rgba(41, 41, 41, 0.353) 13%);
+    padding: 0px 0px 25px 0px;
     margin: 20vh 0px 0px 0px;
     height: fit-content;
 }
@@ -48,6 +47,7 @@
     display: none;
     padding: 10px;
     background: linear-gradient(#002fffdb, #001ea4db), url(../assets/GpasSoft.png) 50% 18%/100%, #002fff;
+    text-transform: uppercase;
     margin-top: 10px;
     border-radius: 0px 0px 3px 3px;
 }

@@ -1,4 +1,6 @@
 @media screen and (max-width: 900px) {
+    
+    /* HEADER ########################################################## */
     header{
         margin-top: 0;
         flex-direction: column;
@@ -41,7 +43,7 @@
         width: 100%;
     }
 
-    /* NAVBAR & BURGER */
+    /* NAVBAR & BURGER  ################################################*/
     #navbar{
         display: none;
     }
@@ -52,15 +54,15 @@
         justify-content: center;
     }
 
-    /* BURGER */
+    /* BURGER ======================================================  */
     #burger{
         display: flex;
         flex-direction: column;
+        position: relative;
 
 
         
         margin: 20px;
-        position: relative;
         width: 30px;
         height: 5px;
         border-radius: 2px;

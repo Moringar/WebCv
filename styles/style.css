@@ -13,6 +13,9 @@
 /* style de la section experience */
 @import url(skillsExperience.css);
 
+/* Style de la section about me */
+@import url(aboutMe.css);
+
 /* style  de la section KNOW MORE ( hobbies, ect. */
 @import url(knowMore.css);
 

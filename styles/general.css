@@ -68,13 +68,15 @@ h2.sectionTitle{
     position: relative;
     padding: 10px 0px 10px 0px;
     font-weight: 700;
+    
+    width: 100%;
 
     text-align: center;
 
     background: linear-gradient(180deg, rgba(2,23,255,1) 0%, rgba(8,28,255,1) 5%, rgba(114,130,255,1) 5%, rgba(255,255,255,1) 7%, rgba(255, 255, 255, 0.424) 100%);
     /* Sync de la couleur du titre. */
     animation: 20s running infinite chooseColor linear;
-    color: #002fff;
+    color: #262626;
     overflow: hidden;
 }
 
@@ -158,18 +160,13 @@ h2.sectionTitle{
     z-index: 4;
     padding: 10px 10px 10px 20px;
     text-align: left;
-    
     margin-bottom: 0;
-
     /* Variarion de la couleur des titres cards. */
     animation: 20s running infinite chooseColor linear;
     color: rgb(255, 255, 255);
     background-color:#444f764f;
-
     font-weight: 700;
-
     text-shadow: 1px 1px 3px black;
-
     backdrop-filter: blur(10px) brightness(50%) contrast(90%);
 }
 /* Description de la card */
@@ -177,9 +174,7 @@ h2.sectionTitle{
     z-index: 2 ;
     padding: 20px;
     height: 100%;
-
     text-shadow: 1px 1px 3px black;
-
     margin-bottom: 0;
     backdrop-filter: blur(2px) brightness(50%) contrast(90%);
 

@@ -63,7 +63,20 @@ hr{
     border: solid rgba(255, 255, 255, 0.05) 1px;
 }
 
+/* H2 Spécial titre de sections */
+h2.sectionTitle{
+    position: relative;
+    padding: 10px 0px 10px 0px;
+    font-weight: 700;
 
+    text-align: center;
+
+    background: linear-gradient(180deg, rgba(2,23,255,1) 0%, rgba(8,28,255,1) 5%, rgba(114,130,255,1) 5%, rgba(255,255,255,1) 7%, rgba(255, 255, 255, 0.424) 100%);
+    /* Sync de la couleur du titre. */
+    animation: 20s running infinite chooseColor linear;
+    color: #002fff;
+    overflow: hidden;
+}
 
 
 /* Gestions de containers generaux  ##################################################################################### */

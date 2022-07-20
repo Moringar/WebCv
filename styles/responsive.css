@@ -1,5 +1,6 @@
 @media screen and (max-width: 900px) {
     header{
+        margin-top: 0;
         flex-direction: column;
         align-items: flex-end;
     }
@@ -22,27 +23,11 @@
     }
 
     header::after{
-    
+        
         background: url(../assets/patternDevSmol.png) 50% 50%/10%;
         -webkit-mask-image: linear-gradient(#002fff, #002fff);
         mask-image: linear-gradient(90deg, #0341B2 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, #0341B2 100%);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     #portrait{
         margin-right: 50px;
@@ -54,6 +39,88 @@
 
     #informations{
         width: 100%;
+    }
+
+    /* NAVBAR & BURGER */
+    #navbar{
+        display: none;
+    }
+
+    nav{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* BURGER */
+    #burger{
+        display: flex;
+        flex-direction: column;
+
+
+        
+        margin: 20px;
+        position: relative;
+        width: 30px;
+        height: 5px;
+        border-radius: 2px;
+        animation: 20s running infinite chooseColor linear;
+        background-color: #002fff;
+    }
+    
+    #burger a{
+        display: none;
+        text-align: left;
+    }    
+    
+    #burger::before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top:10px ;
+        width: 30px;
+        height: 5px;
+        border-radius: 2px;
+        animation: 20s running infinite chooseColor linear;
+        background-color: #002fff;
+    }
+    #burger::after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top:20px ;
+        width: 30px;
+        height: 5px;
+        border-radius: 2px;
+        animation: 20s running infinite chooseColor linear;
+        background-color: #002fff;
+    }
+    /* Hover BURGER */
+
+    #burger:focus{
+        width: 100%;
+        height: 200px;
+    }
+
+    #burger:hover{
+        width: 100%;
+        height: fit-content;
+    }
+
+    #burger:hover a{
+        font-family: barlow;
+        font-weight: 700;
+        font-size: 40px;
+        display: block;
+        padding: 5px;
+        margin: 0px 0px 0px 40px;
+    }
+    #burger a:hover{
+        margin: 0px 0px 0px 50px;
+    }
+
+    #interlude{
+        margin-top: 20px;
     }
 
 

@@ -31,7 +31,7 @@
     position: relative;
     margin: 10px;
     padding-top: 20px;
-    background: linear-gradient(#002fffdb, #002fffdb), url(../assets/pattern/patternMicro.png) 50% 50%/100%, #002fff;
+    background: linear-gradient(#002fffdb, #002fffdb), url("../assets/pattern/patternWhite.png")  50% 50%/100%, #002fff;
     
     display: flex;
     flex-direction: column;
@@ -44,21 +44,24 @@
     filter: saturate(50%);
 }
 
+.skillCard img{
+    filter: invert(100%);
+}
 /* Format du texte a dérouler. */
 .skillCard p{
-    background: linear-gradient(#002fffdb, #001ea4db), url(../assets/pattern/patternMicro.png) 50% 18%/100%, #002fff;
+    background: linear-gradient(#002fffdb, #001ea4db), url("../assets/pattern/patternWhite.png") 50% 18%/100%, #002fff;
     display: none;
     padding: 10px;
     
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 0px 0px 3px 3px;
 }
 .skillCard span{
     margin-top: 10px;
     padding: 10px;
     display: block;
-    color: rgb(0, 0, 0);
-    background-color: white;
+    color:#BEED08;
+    background-color: rgb(0, 0, 0);
     font-weight: 700;
 }
 .skillCard span::before{

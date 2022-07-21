@@ -141,7 +141,7 @@ header video{
     border-radius: 5px;
 }
 #punchline{
-    /* color: rgb(255, 211, 66); */
+    color: #BEED08; 
     font-weight: 900;
 }
 
@@ -203,5 +203,5 @@ div.badge:hover p{
     display: block;
     text-align: center;
     opacity: 100%;
-    transform: translateY(63px);
+    transform: translateY(46px);
 }

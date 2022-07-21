@@ -70,6 +70,8 @@ h2.sectionTitle{
     padding: 10px 0px 10px 25px;
     font-weight: 700;
     
+    box-sizing: border-box;
+
     width: 100%;
 
     text-align: left;

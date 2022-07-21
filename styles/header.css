@@ -66,7 +66,7 @@ header::after{
     animation:15s running infinite slideUp linear;
 
 
-    background: url(../assets/patternDevSmol.png) 50% 50%/10%;
+    background: url(../assets/pattern/patternDevSmol.png) 50% 50%/10%;
     /* Appelez le président ! On peut faire des masques alpha sur des elements. */
     -webkit-mask-image: linear-gradient(90deg, #0341B2 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, #0341B2 100%);
     mask-image: linear-gradient(90deg, #0341B2 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 30%, #0341B2 100%);

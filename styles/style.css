@@ -13,8 +13,14 @@
 /* Style de l'interlude après la navbar */
 @import url(interlude.css);
 
+/* Style de la section mon PARCOURS */
+@import url(parcours.css);
+
 /* Style de la section about me */
 @import url(aboutMe.css);
+
+/* Style de la section contact */
+@import url(contact.css);
 
 
 /* Responsive, importé en dernier, priorité élevée.*/
